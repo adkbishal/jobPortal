@@ -1,0 +1,162 @@
+/* Reset Styles Start Here  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #DC5F00;
+    --secondary-color: #373A40;
+    --tertiary-color: #686D76;
+    --background-color: #EEEEEE;
+    --orange-color: #fd7238;
+    --light-orange-color: #fed8b1;
+    --box-shadow: 0 .5rem 1.5rem #DC5F00;
+    --border: 2rem solid rgba(0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0.1);
+    --transition: all 0.5s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+p,
+li,
+a,
+label {
+    font-size: 1.8rem;
+    /* letter-spacing: 0.1rem; */
+    font-weight: 400;
+    /* line-height: 1.5; */
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+  }
+  
+  .grid-two--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-three--cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Reset Styling Ends Here  */
+
+  .main .section-dashboard {
+      /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+  }
+
+        /* Dashboard Left Styling Starts Here  */
+
+  .section-dashboard .dashboard-left {
+    /* border: 1px solid; */
+    height: 100%;
+    overflow-x: hidden;
+    color: #fff;
+    background-color: var(--secondary-color);
+  }
+
+  .dashboard-left h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 1rem;
+    color: var(--primary-color);
+  }
+
+  .dashboard-left .logo-section {
+    text-align: center;
+  }
+
+  .dashboard-left .left-wrapper {
+    border: 1px solid;
+    /* justify-content: space-around; */
+    cursor: pointer;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .left-wrapper i {
+    font-size: 3.2rem;
+  }
+
+                /* Dashboard Left Styling Ends Here  */
+
+                /* Dashboard Right Styling Starts Here  */
+
+  .section-dashboard .dashboard-right {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    /* padding: 2rem; */
+  }
+
+  .dashboard-right .navbar-dashboard {
+    background-color: var(--background-color);
+    height: 10rem;
+    width: 100%;
+   
+  }
+
+            /* Dashboard Right Styling Ends Here  */
+
+  
+
+

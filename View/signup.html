@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="../Resources/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Box Icon  -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+</head>
+
+<body>
+    <div class="signup-main flex">
+        <section class="signup-section">
+            <div class="cross">
+                <i class='bx bx-x wrong-btn'></i>
+            </div>
+            <div class="signup-tabs flex">
+                <button class="employer-tab tab active">Employer Signup</button>
+                <button class="jobseeker-tab tab">Jobseeker Signup</button>
+            </div>
+            <div class="signup-container">
+                <form action="#" id="employer-form" class="form form-active">
+                    <h2>Signup as Employer</h2>
+                    <div class="signup-wrapper">
+                        <label for="username">Username:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bx-user-circle"></i>
+                            <input type="text" name="username" id="username" placeholder="Type your username" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="email">Email:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-envelope"></i>
+                            <input type="text" name="email" id="email" placeholder="Type your email" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="password">Password</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-lock-open"></i>
+                            <input type="password" name="password" id="password" placeholder="Type your password" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="repeat-password">Repeat Password</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-lock-open"></i>
+                            <input type="password" name="repeat-password" id="repeat-password" placeholder="Retype Password" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="company-name">Company Name:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-envelope"></i>
+                            <input type="text" name="company-name" id="company-name" placeholder="Type your company name" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="description">Description:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-envelope"></i>
+                            <input type="text" name="description" id="description" placeholder="Type your company description" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="website">Website</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-envelope"></i>
+                            <input type="text" name="website" id="website" placeholder="Type your company website" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <button class="employer-signup signup-button">Sign up</button>
+                    </div>
+                    <div class="signup-wrapper forget-password">
+                        <span><a href="#">Forget Password?</a></span>
+                    </div>
+
+                    <div class="signup-wrapper">
+                        <p>Already a member ? <span><a href="../View/login.html">Sign In</a></span></p>
+                    </div>
+                </form>
+
+                <form action="#" id="jobseeker-form" class="form">
+                    <h2>Signup as Job Seeker</h2>
+                    <div class="signup-wrapper">
+                        <label for="username">Username:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bx-user-circle"></i>
+                            <input type="text" name="username" id="username" placeholder="Type your username" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="contact-number">Contact Number:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-lock-open"></i>
+                            <input type="number" name="contact-number" id="contact-number" placeholder="Contact Number" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="email">Email:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-envelope"></i>
+                            <input type="text" name="email" id="email" placeholder="Type your email" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="password">Password:</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-lock-open"></i>
+                            <input type="password" name="password" id="password" placeholder="Type your password" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <label for="repeat-password">Repeat Password</label>
+                        <div class="signup-box flex">
+                            <i class="bx bxs-lock-open"></i>
+                            <input type="password" name="repeat-password" id="repeat-password" placeholder="Retype Password" />
+                        </div>
+                    </div>
+                    <div class="signup-wrapper">
+                        <button class="jobseeker-signup signup-button">Sign up</button>
+                    </div>
+                    <div class="signup-wrapper forget-password">
+                        <span><a href="#">Forget Password?</a></span>
+                    </div>
+                    <div class="signup-wrapper">
+                        <p>Already a member ? <span><a href="../View/login.html">Sign In</a></span></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>
+        
+let employerTab = document.querySelector('.employer-tab');
+        let jobseekerTab = document.querySelector('.jobseeker-tab');
+        let employerForm = document.querySelector('#employer-form');
+        let jobseekerForm = document.querySelector('#jobseeker-form');
+
+        employerTab.addEventListener("click", function() {
+            employerTab.classList.add('active');
+            jobseekerTab.classList.remove('active');
+            employerForm.classList.add('form-active');
+            jobseekerForm.classList.remove('form-active');
+        });
+
+        jobseekerTab.addEventListener("click", function() {
+            jobseekerTab.classList.add('active');
+            employerTab.classList.remove('active');
+            jobseekerForm.classList.add('form-active');
+            employerForm.classList.remove('form-active');
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let wrongBtn = document.querySelector('.wrong-btn');
+            let formElement = document.querySelector('.signup-main');
+            let signupSection = document.querySelector('.signup-section');
+
+            // Function to hide form and redirect
+            function hideForm() {
+                formElement.style.display = "none";
+                window.location.href = './index.html';
+            }
+
+            wrongBtn.addEventListener("click", function() {
+                hideForm();
+            });
+
+            // Event listener for clicks outside the signup form
+            document.addEventListener("click", function(event) {
+                if (!signupSection.contains(event.target)) {
+                    hideForm();
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

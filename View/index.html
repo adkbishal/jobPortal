@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal System</title>
+    <link rel="stylesheet" href="../Resources/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <!--Header Section Starts-->
+        <!-- <div class="container"> Container for Responsive -->
+        <header class="section-navbar flex">
+            <div class="left"> <!-- Logo Section Starts here -->
+                <a href="index.html">
+                    <img src="../Images/Logo.png" alt="logo-img-alt">
+                </a>
+            </div> <!-- Logo Section End Here -->
+            <ul class="middle flex">
+                <li class="nav-item"><a class="nav-links" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-links" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-links" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-links" href="#">Features</a></li>
+                <li class="nav-item"><a class="nav-links" href="#">Contact</a></li>
+            </ul>
+            <div class="right flex">
+                <span><img src="../Images/night mode.png" alt=""></span>
+                <a href="../View/login.html"><button class="login">Login</button></a>
+                <a href="../View/signup.html"><button class="signup">Sign Up</button></a>
+
+  
+            </div>
+        </header> <!-- Main Wrapper End Here -->
+        <main class="hero-section flex">
+            <section class="hero-left flex">
+                <div class="hero-wrapper">
+                    <h1>Find a job that suits</h1>
+                    <h1>Your Interest & <span>Skills</span>.</h1>
+                    <p>With the job portal script, you can now bring all the job seekers to your job board.
+                        Let them find their dream job with sound experience!</p>
+                    <div class="hero-search flex">
+                        <div class="input-container flex">
+                            <i class='bx bx-search'></i>
+                            <input type="text" placeholder="Job title,  Keyword... " name="search-job" id="search-job">
+                        </div>
+                        <div class="input-container flex">
+                            <i class='bx bx-map'></i>
+                            <input type="text" placeholder="Your Location..." name="search-location"
+                                id="search-location">
+                        </div>
+                        <button>Find Job</button>
+                    </div>
+                </div>
+            </section>
+            <section class="hero-right">
+                <img src="../Images/hero-section.jpg" alt="">
+                <!--Share Divider Starts-->
+                <div class="custom-shape-divider-bottom-1716898052">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                            opacity=".25" class="shape-fill"></path>
+                        <path
+                            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                            opacity=".5" class="shape-fill"></path>
+                        <path
+                            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+                <!--Shape Divider End-->
+            </section>
+        </main>
+        <!--Hero Section Ends Here-->
+        <!-- Start About Section  -->
+        <section class="about-section">
+            <h2 class="section-heading">About JobPortal</h2>
+            <p>The online job portal application allows job seekers and recruiters to connect.</p>
+            <div class="about-wrapper flex">
+                <div class="about-box"> <!--Box1-->
+                    <div class="icon">
+                        <img src="../Images/Image1.png" alt="alternate-img">
+                    </div>
+                    <h3 class="about-title">Research</h3>
+                    <p>With the job portal script, you can now bring all the job seekers to your job board. Let them
+                        find their dream job with sound experience!</p>
+                </div>
+
+                <div class="about-box"> <!--Box2-->
+                    <div class="icon">
+                        <img src="../Images/employee.png" alt="alternate-img">
+                    </div>
+                    <h3 class="about-title">Apply Now</h3>
+                    <p>With the job portal script, you can now bring all the job seekers to your job board. Let them
+                        find their dream job with sound experience!</p>
+                </div>
+                <div class="about-box"> <!--Box3-->
+                    <div class="icon">
+                        <img src="../Images/businessman.png" alt="alternate-img">
+                    </div>
+                    <h3 class="about-title">Job Portal</h3>
+                    <p>With the job portal script, you can now bring all the job seekers to your job board. Let them
+                        find their dream job with sound experience!</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End Here  -->
+        <!-- Categories section Starts here  -->
+        <section class="category-section">
+            <h1>Top Categories</h1>
+            <div class="category-grid">
+                <div class="category"> <!--Category 1-->
+                    <div class="icon">⚖️</div>
+                    <div class="title">Law/Legal</div>
+                    <div class="positions">19 Open Positions</div>
+                </div>
+                <div class="category"> <!--Categry 2-->
+                    <div class="icon">🎨</div>
+                    <div class="title">Design/Creative</div>
+                    <div class="positions">18 Open Positions</div>
+                </div>
+                <div class="category"> <!--Category 3-->
+                    <div class="icon">🏨</div>
+                    <div class="title">Hospitality/Travel/Tourism</div>
+                    <div class="positions">18 Open Positions</div>
+                </div>
+                <div class="category"> <!--Caegory 4-->
+                    <div class="icon">👗</div>
+                    <div class="title">Garments/Textile</div>
+                    <div class="positions">17 Open Positions</div>
+                </div>
+                <div class="category"> <!--Category 5-->
+                    <div class="icon">💻</div>
+                    <div class="title">IT & Telecommunication</div>
+                    <div class="positions">16 Open Positions</div>
+                </div>
+                <div class="category"> <!--Category 6-->
+                    <div class="icon">💊</div>
+                    <div class="title">Medical/Pharma</div>
+                    <div class="positions">15 Open Positions</div>
+                </div>
+                <div class="category"> <!--Cateogry 7-->
+                    <div class="icon">🚗</div>
+                    <div class="title">Driving/Motor Technician</div>
+                    <div class="positions">15 Open Positions</div>
+                </div>
+                <div class="category"> <!--Category 8-->
+                    <div class="icon">🔧</div>
+                    <div class="title">Others</div>
+                    <div class="positions">13 Open Positions</div>
+                </div>
+            </div>
+        </section>
+        <!--Job Category Section End Here -->
+        <!-- JobPortal Working Section Starts here  -->
+        <section class="working-section">
+            <h1><span class="highlight">Jobpilot</span> Working Process</h1>
+            <div class="process-row">
+                <div class="process-step">
+                    <div class="icon">👤➕</div>
+                    <h2>Explore Opportunities</h2>
+                    <p>Browse through a diverse range of job listings tailored to your interests and expertise</p>
+                </div>
+                <div class="curve">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
+                        <path d="M0,10 Q50,0 100,10 T200,10" fill="none" stroke="#ccc" stroke-width="2"
+                            stroke-dasharray="5,5" />
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <div class="icon">🔄</div>
+                    <h2>Create Your Profile</h2>
+                    <p>Build a standout profile highlighting your skills, experience, and qualifications</p>
+                </div>
+                <div class="curve">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
+                        <path d="M0,10 Q50,0 100,10 T200,10" fill="none" stroke="#ccc" stroke-width="2"
+                            stroke-dasharray="5,5" />
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <div class="icon">➕📄</div>
+                    <h2>Apply with Ease</h2>
+                    <p>Effortlessly apply to jobs that match your preferences with just a few clicks</p>
+                </div>
+                <div class="curve">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20">
+                        <path d="M0,10 Q50,0 100,10 T200,10" fill="none" stroke="#ccc" stroke-width="2"
+                            stroke-dasharray="5,5" />
+                    </svg>
+                </div>
+                <div class="process-step">
+                    <div class="icon">⭐</div>
+                    <h2>Track Your Progress</h2>
+                    <p>Stay informed on your applications and manage your job-seeking journey effectively</p>
+                </div>
+            </div>
+        </section>
+        <!-- JobPortal Working Section Ends Here  -->
+        <!--Statistics Section Starts Here-->
+        <section class="stat-container"> 
+            <h1>Our Statistics</h1>
+            <div class="stat-wrapper flex">
+                <div class="stat-box flex"> <!--Stat Box 1-->
+                    <div class="stat-left">
+                        <h3>100</h3>
+                        <h4>Job Offers</h4>
+                    </div>
+                    <div class="stat-right">
+                        <i class="ion ion-ios-paper"></i>
+                    </div>
+                </div>
+                <div class="stat-box flex"> <!--Stat Box 2-->
+                    <div class="stat-left">
+                        <h3>200</h3>
+                        <h4>Registered Company</h4>
+                    </div>
+                    <div class="stat-right">
+                        <i class='bx bxs-briefcase'></i>
+                    </div>
+                </div>
+                <div class="stat-box flex"> <!--Stat Box 3-->
+                    <div class="stat-left">
+                        <h3>3</h3>
+                        <h4>CV's/ Resume</h4>
+                    </div>
+                    <div class="stat-right">
+                        <i class="ion ion-ios-list"></i>
+                    </div>
+                </div>
+                <div class="stat-box flex"> <!--Stat Box 4-->
+                    <div class="stat-left">
+                        <h3>20</h3>
+                        <h4>Daily Users</h4>
+                    </div>
+                    <div class="stat-right">
+                        <i class="ion ion-person-stalker"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Statistics Section End Here-->
+                    <!-- Featured Job Section Starts Here  -->
+        <section class="featured-job">
+            <h1>Featured Jobs</h1>
+           <div class="featured-wrapper grid grid-two--cols">
+            <div class="featured-box flex"> <!--Featured Box 1-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="full-time">Full Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!--Featured Box 1 -->
+
+            <div class="featured-box flex"> <!--Featured Box 2-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="part-time">Part Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 2-->
+
+            <div class="featured-box flex"> <!--Featured Box 3-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="full-time">Full Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 3-->
+
+            <div class="featured-box flex"> <!--Featured Box 4-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="part-time">Part Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 4-->
+
+            <div class="featured-box flex"> <!--Featured Box 5-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="part-time">Part Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 5-->
+
+            <div class="featured-box flex"> <!--Featured Box 6-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="full-time">Full Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 6-->
+
+            <div class="featured-box flex"> <!--Featured Box 7-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="full-time">Full Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 7-->
+
+            <div class="featured-box flex"> <!--Featured Box 8-->
+                <div class="featured-logo">
+                    <img src="../Images/hamburger.png" alt="alt-img">
+                </div>
+                <div class="featured-details"> 
+                    <h3>Technical Database Engineer</h3>
+                    <p>Database Management Company</p>
+                    <span class="full-time">Full Time</span> -Kathmandu
+                </div>
+                <button class="signup">Apply Now</button>
+            </div> <!-- Featured Box 8-->
+
+           </div>
+        </section>
+        <!-- Featured Job Section Starts Here  -->
+
+        <!-- Footer Section Starts Here  -->
+        <footer class="footer-section">
+            <div class="footer-wrapper grid grid-three--cols">
+                <div class="footer-column">
+                    <div class="logo">
+                        <a href="#"><img src="../Images/Logo.png" alt=""></a>
+                    </div>
+                    <p>With the job portal script, you can now bring all the job seekers to your job board. Let them find their dream job with sound experience!</p>
+                    <div class="social-icons flex">
+                        <a href="#"><img src="../Images/facebook_icon.png" alt=""></a>
+                        <a href="#"><img src="../Images/Linkedin.png" alt=""></a>
+                        <a href="#"><img src="../Images/Tweeter.png" alt=""></a>
+                        <a href="#"><img src="../Images/Youtube.png" alt=""></a>
+                        <a href="#"><img src="../Images/Whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-column footer-column-second">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Career Services</a></li>
+                        <li><a href="#">CV Writing</a></li>
+                        <li><a href="#">Career Resources</a></li>
+                        <li><a href="#">Company Listings</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Contact Sales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Job By Industry</h2>
+                    <ul>
+                        <li><a href="#">IT</a></li>
+                        <li><a href="#">Recruitment/Employment</a></li>
+                        <li><a href="#">Education/ Training</a></li>
+                        <li><a href="#">Call Center Jobs</a></li>
+                        <li><a href="#">BPO Jobs</a></li>
+                        <li><a href="#">Garments Jobs</a></li>
+                        <li><a href="#">FreeLance</a></li>
+                        <li><a href="#">Manager</a></li>
+                        <li><a href="#">DBMS Manager</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section Starts Here  -->
+
+        <!--Footer Last Section Starts here-->
+        <footer class="footer-last">
+            <div class="footer-wrapper">
+                <p>Copyright &copy; 2024 Job Portal</p>
+                <p> Design By: <span>Bishal Adhikari</span></p>
+
+            </div>
+        </footer>
+        <!--Footer Last Section ENds here-->
+
+    </div>
+    <!-- <button id="backToTopBtn" title="Go to Top">Top</button> -->
+    <div id="backToTopBtn">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+    <script src="../Resources/script.js"></script>
+</body>
+
+</html>

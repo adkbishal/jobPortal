@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Modals</title>
+    <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+     </style>
+</head>
+<body>
+    <h1>Welcome to the Site</h1>
+    <button id="openSignupModal">Sign Up</button>
+    <button id="openLoginModal">Log In</button>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignupModal">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="username" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Log In</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="static/js/main.js"></script> -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Get the modals
+    const signupModal = document.getElementById("signupModal");
+    const loginModal = document.getElementById("loginModal");
+
+    // Get the buttons that open the modals
+    const openSignupModal = document.getElementById("openSignupModal");
+    const openLoginModal = document.getElementById("openLoginModal");
+
+    // Get the <span> elements that close the modals
+    const closeSignupModal = document.getElementById("closeSignupModal");
+    const closeLoginModal = document.getElementById("closeLoginModal");
+
+    // Open the signup modal
+    openSignupModal.onclick = function() {
+        signupModal.style.display = "block";
+    }
+
+    // Open the login modal
+    openLoginModal.onclick = function() {
+        loginModal.style.display = "block";
+    }
+
+    // Close the signup modal
+    closeSignupModal.onclick = function() {
+        signupModal.style.display = "none";
+    }
+
+    // Close the login modal
+    closeLoginModal.onclick = function() {
+        loginModal.style.display = "none";
+    }
+
+    // Close the modals if the user clicks outside of them
+    window.onclick = function(event) {
+        if (event.target == signupModal) {
+            signupModal.style.display = "none";
+        } else if (event.target == loginModal) {
+            loginModal.style.display = "none";
+        }
+    }
+
+    // Handle the signup form submission
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const username = document.getElementById("signupUsername").value;
+        const password = document.getElementById("signupPassword").value;
+
+        console.log("Signup:", { username, password });
+        // Here you would send the signup data to the server
+    });
+
+    // Handle the login form submission
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const username = document.getElementById("loginUsername").value;
+        const password = document.getElementById("loginPassword").value;
+
+        console.log("Login:", { username, password });
+        // Here you would send the login data to the server
+    });
+});
+
+     </script>
+</body>
+</html>
